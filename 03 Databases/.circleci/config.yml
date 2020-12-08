@@ -5,9 +5,7 @@ jobs:
       - image: circleci/node
 
       - image: circleci/postgres:9.6.5-alpine-ram
-        auth:
-          username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD
+
 
     steps:
       - checkout # check out the code in the project directory
